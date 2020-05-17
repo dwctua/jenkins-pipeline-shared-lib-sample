@@ -1,4 +1,4 @@
-withJte(Clousre nodeAction) {
+withJte(Closure nodeAction) {
   template nodeAction
 }
 
