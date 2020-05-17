@@ -11,8 +11,10 @@ def call() {
     stages {
       stage('intial') {
         steps {
-          withJte {
-            generate()
+          script{
+            withJte {
+              generate()
+            }
           }
         }
       }
