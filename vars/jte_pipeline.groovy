@@ -1,4 +1,5 @@
-withJte(Closure nodeAction) {
+void withJte(Closure nodeAction) {
+  podTemplate(
   template nodeAction
 }
 
