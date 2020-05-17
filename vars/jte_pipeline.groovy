@@ -1,3 +1,7 @@
+withJte(Clousre nodeAction) {
+  template nodeAction
+}
+
 def call() {
   pipeline {
       agent any
@@ -7,7 +11,9 @@ def call() {
     stages {
       stage('intial') {
         steps {
-          generate()
+          withJte {
+            generate()
+          }
         }
       }
     }
