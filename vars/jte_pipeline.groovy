@@ -14,7 +14,7 @@ def call() {
         steps {
           script{
             withJte {
-              read_json('/home/jenkins/workspace/test-shared-lib_master/config/host.json')
+              read_json('config/host.json')
               generate()
             }
           }
