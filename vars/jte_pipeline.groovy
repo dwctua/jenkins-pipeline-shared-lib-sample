@@ -14,7 +14,7 @@ def call() {
         steps {
           script{
             withJte {
-              read_json('config/host.json')
+              //read_json('config/host.json')
               generate()
             }
           }
